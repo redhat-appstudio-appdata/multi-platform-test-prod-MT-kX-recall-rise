@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: multi-platform-test-prod
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/mkosiarc-tenant/multi-platform-test-prod/multi-platform-test-prod@sha256:29bcbdd6e186b5dbf6ee12b9db54d094cc717031d53e6acd0fb2fec133023815
+        name: my-go
+        resources: {}
+status: {}
